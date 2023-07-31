@@ -10,7 +10,7 @@ We implement our Kubernetes scheduler using Kubernetes v1.20.7.
 This repository is the implementation of our paper titled CASPR: Connectivity-Aware Scheduling for
 Partition Resilience published in Symposium on Reliable Distributed Systems (SRDS 2023). 
 
-# For build instructions please refer to: 
+For build instructions please refer to: 
 
 https://github.com/kubernetes/kubernetes
 
