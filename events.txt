@@ -1,0 +1,38 @@
+LAST SEEN   TYPE      REASON                 OBJECT                                         MESSAGE
+3m39s       Warning   Unhealthy              pod/calico-kube-controllers-7c5b64bf96-z98zd   Readiness probe failed: Failed to read status file /status/status.json: unexpected end of JSON input
+8m32s       Normal    Pulled                 pod/dns-autoscaler-7cdcfcf64f-pcmtz            Container image "k8s.gcr.io/cpa/cluster-proportional-autoscaler-amd64:1.8.3" already present on machine
+3m36s       Warning   BackOff                pod/dns-autoscaler-7cdcfcf64f-pcmtz            Back-off restarting failed container
+54m         Warning   FailedScheduling       pod/my-scheduler-5d89c5fff-kdmkl               0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+9m18s       Warning   FailedScheduling       pod/my-scheduler-5d89c5fff-kdmkl               0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+4m2s        Warning   FailedScheduling       pod/my-scheduler-5d89c5fff-kdmkl               0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+2m38s       Warning   FailedScheduling       pod/my-scheduler-5d89c5fff-kdmkl               0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+102s        Warning   FailedScheduling       pod/my-scheduler-5d89c5fff-kdmkl               skip schedule deleting pod: kube-system/my-scheduler-5d89c5fff-kdmkl
+54m         Normal    SuccessfulCreate       replicaset/my-scheduler-5d89c5fff              Created pod: my-scheduler-5d89c5fff-kdmkl
+57m         Warning   FailedScheduling       pod/my-scheduler-666dcffcb5-q9g8p              0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+57m         Warning   FailedScheduling       pod/my-scheduler-666dcffcb5-q9g8p              0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+57m         Warning   FailedScheduling       pod/my-scheduler-666dcffcb5-q9g8p              skip schedule deleting pod: kube-system/my-scheduler-666dcffcb5-q9g8p
+57m         Normal    SuccessfulCreate       replicaset/my-scheduler-666dcffcb5             Created pod: my-scheduler-666dcffcb5-q9g8p
+58m         Warning   FailedScheduling       pod/my-scheduler-67ffd95979-vfpzj              0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+58m         Warning   FailedScheduling       pod/my-scheduler-67ffd95979-vfpzj              0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+57m         Warning   FailedScheduling       pod/my-scheduler-67ffd95979-vfpzj              skip schedule deleting pod: kube-system/my-scheduler-67ffd95979-vfpzj
+58m         Normal    SuccessfulCreate       replicaset/my-scheduler-67ffd95979             Created pod: my-scheduler-67ffd95979-vfpzj
+65s         Warning   FailedScheduling       pod/my-scheduler-7f688f8d68-cbxnt              0/4 nodes are available: 1 node(s) didn't find available persistent volumes to bind, 1 node(s) had taint {node-role.kubernetes.io/master: }, that the pod didn't tolerate, 2 node(s) didn't match Pod's node affinity.
+65s         Warning   FailedScheduling       pod/my-scheduler-7f688f8d68-cbxnt              0/4 nodes are available: 1 node(s) didn't find available persistent volumes to bind, 1 node(s) had taint {node-role.kubernetes.io/master: }, that the pod didn't tolerate, 2 node(s) didn't match Pod's node affinity.
+65s         Normal    SuccessfulCreate       replicaset/my-scheduler-7f688f8d68             Created pod: my-scheduler-7f688f8d68-cbxnt
+59m         Warning   FailedScheduling       pod/my-scheduler-995c8544f-2fmpz               0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+59m         Warning   FailedScheduling       pod/my-scheduler-995c8544f-2fmpz               0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+58m         Warning   FailedScheduling       pod/my-scheduler-995c8544f-2fmpz               skip schedule deleting pod: kube-system/my-scheduler-995c8544f-2fmpz
+59m         Normal    SuccessfulCreate       replicaset/my-scheduler-995c8544f              Created pod: my-scheduler-995c8544f-2fmpz
+55m         Warning   FailedScheduling       pod/my-scheduler-b7c57bbd-f4bt8                0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+54m         Warning   FailedScheduling       pod/my-scheduler-b7c57bbd-f4bt8                0/4 nodes are available: 4 persistentvolumeclaim "task-pv-claim" not found.
+54m         Warning   FailedScheduling       pod/my-scheduler-b7c57bbd-f4bt8                skip schedule deleting pod: kube-system/my-scheduler-b7c57bbd-f4bt8
+55m         Normal    SuccessfulCreate       replicaset/my-scheduler-b7c57bbd               Created pod: my-scheduler-b7c57bbd-f4bt8
+59m         Normal    ScalingReplicaSet      deployment/my-scheduler                        Scaled up replica set my-scheduler-995c8544f to 1
+58m         Normal    ScalingReplicaSet      deployment/my-scheduler                        Scaled up replica set my-scheduler-67ffd95979 to 1
+57m         Normal    ScalingReplicaSet      deployment/my-scheduler                        Scaled up replica set my-scheduler-666dcffcb5 to 1
+55m         Normal    ScalingReplicaSet      deployment/my-scheduler                        Scaled up replica set my-scheduler-b7c57bbd to 1
+54m         Normal    ScalingReplicaSet      deployment/my-scheduler                        Scaled up replica set my-scheduler-5d89c5fff to 1
+65s         Normal    ScalingReplicaSet      deployment/my-scheduler                        Scaled up replica set my-scheduler-7f688f8d68 to 1
+66s         Normal    WaitForFirstConsumer   persistentvolumeclaim/my-volume-claim          waiting for first consumer to be created before binding
+6s          Normal    WaitForPodScheduled    persistentvolumeclaim/my-volume-claim          waiting for pod my-scheduler-7f688f8d68-cbxnt to be scheduled
+4m6s        Warning   ProvisioningFailed     persistentvolumeclaim/task-pv-claim            storageclass.storage.k8s.io "manual" not found
